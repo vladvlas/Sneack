@@ -1,0 +1,49 @@
+.team {
+    position: relative;
+    padding: 40px 0;
+    margin-bottom: 60px;
+    background-color: var(--color-estbay);
+
+    &__title {
+       color: var(--color-white);
+
+    }
+
+    &__list {
+        position: relative;
+        gap: 40px 20px;
+        z-index: 5;
+    }
+
+    &__figure {
+        position:absolute;
+        right: 0;
+        top: 0;
+    }
+
+    &__item {
+        grid-column: 4 span;
+    }
+
+    &__img {
+        overflow: hidden;
+        border-radius: 4px;
+        margin-bottom: 20px;
+
+    }
+
+    &__subtitle {
+        display: block;
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 20px;
+        color: var(--color-white );
+        
+    }
+
+    &__post {
+        font-size: 16px;
+        line-height: 16px;
+        color: var(--color-white);
+    }
+}

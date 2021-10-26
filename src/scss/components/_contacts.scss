@@ -1,0 +1,37 @@
+.contacts {
+    padding: 60px 0;
+    background-color: #f3f6f6;
+
+    &__title {
+        margin-bottom: 60px;
+    }
+
+    &__item {
+        font-style: normal;
+        margin-bottom: 40px;
+
+    }
+
+    &__subtitle {
+        margin: 0;
+        margin-bottom: 40px;
+        font-size: 14px;
+        line-height: 140%;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #B2B5BB;
+    }
+
+    &__phone {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 140%;
+        color: #444B58;
+        margin-bottom: 20px;
+    }
+
+    &__address {
+        display: block;
+    }
+}
+

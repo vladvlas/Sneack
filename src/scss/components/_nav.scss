@@ -1,0 +1,19 @@
+.nav {
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: var(--main-offset);
+        }
+    }
+
+    &__link {
+        font-size: 14px;
+        font-weight: 400;
+        font-family: "Intro" sans-serif;
+        color: var(--color-white);
+    }
+}

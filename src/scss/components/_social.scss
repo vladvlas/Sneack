@@ -1,0 +1,25 @@
+.social {
+    display: flex;
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+    &__link {
+        width: 44px;
+        height: 44px;
+        display: block;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &--vk {
+            background-image: url('../../img/vk.svg');
+        }
+
+        &--insta {
+            background-image: url('../../img/insta.svg');
+        }
+    }
+}

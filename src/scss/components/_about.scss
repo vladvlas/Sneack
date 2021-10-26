@@ -1,0 +1,102 @@
+.about {
+    position: relative;
+    overflow: hidden;
+    height: 580px;
+    background-color: var(--color-estbay);
+
+    &__container {
+        display: flex;
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+    }
+
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        border: 0;
+        clip: rect(0 0 0 0);
+    }
+
+    &__figure {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    &__text {
+        font-family: 'Intro' sans-serif;
+        width: 34%;
+        color: var(--color-white);
+        transform: translateY(70px);
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        color: var(--color-white)
+    }
+
+    &__descr {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    &__quote {
+        display: inline-block;
+        margin-bottom: 20px;
+        font: inherit;
+
+        &::before, &::after {
+            display: none;
+        }
+    }
+
+    &__author {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        transform: translateX(50px);
+
+        &::before {
+            content: '';
+            display: inline-block;
+            margin-right: 20px;
+            width: 30px;
+            height: 3px;
+            background-color: var(--color-white);
+        }
+    }
+
+    &__image {
+        position: absolute;
+        right: 0;
+        top: -150px;
+        flex-shrink: 0;
+        width: 500px;
+        height: 950px;
+        right: 50px;
+        overflow: hidden;
+        transform: rotate(15deg);
+        background-color: red;
+
+        img {
+            position: absolute;
+            max-width: none;
+            left: 50%;
+            width: 200%;
+            height: 100%;
+            object-fit: cover;
+            transform: rotate(-15deg) translateX(-50%);
+        }
+    }
+}
