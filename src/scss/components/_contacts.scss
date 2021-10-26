@@ -2,6 +2,12 @@
     padding: 60px 0;
     background-color: #f3f6f6;
 
+    &__container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
     &__title {
         margin-bottom: 60px;
     }
@@ -10,6 +16,11 @@
         font-style: normal;
         margin-bottom: 40px;
 
+    }
+
+    &__text {
+        margin-right: 20px;
+        width: calc(100% - 680px - 20px);
     }
 
     &__subtitle {
@@ -32,6 +43,11 @@
 
     &__address {
         display: block;
+    }
+
+    &__map {
+        width: 680px;
+        height: 500px;
     }
 }
 
